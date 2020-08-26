@@ -168,7 +168,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -200,6 +200,104 @@
       
 
       
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://jasonmiao0226.github.io/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/img.jpg">
+      <meta itemprop="name" content="Jason Miao">
+      <meta itemprop="description" content="尽人事，听天命">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="会飞的土豆">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/" class="post-title-link" itemprop="url">第一篇：hexo+github搭建方案（无坑版）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2020-08-26 12:12:36 / Modified: 13:09:13" itemprop="dateCreated datePublished" datetime="2020-08-26T12:12:36+08:00">2020-08-26</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>搭建方案整体分为五步：</p>
+<p>第一步（准备阶段）</p>
+<pre><code>整体搭建过程需要用到：Git、node.js、hexo、github</code></pre>
+<p>第二步（node安装）</p>
+<pre><code>通过官网地址下载：https://nodejs.org/zh-cn/
+下载成功后，进行手动安装，安装成功后（此时npm管理器及node.js都已经安装完成了）
+通过终端进行查看（mac版本如下）
+    1.sudo su 获取管理员权限
+    2.输入mac中的密码
+    3.验证通过后，node -v，查看node版本号
+    4.npm -v，查看nom版本号</code></pre>
+<p>第三步（cnpm）</p>
+<pre><code>安装npm，npm install -g
+安装成功后，安装博客框架，npm install -g hexo-cli 
+创建一个blog文件夹，mikdir blog
+进入blog，cd blog 
+初始化一个博客，sudo hexo init 
+启动这个博客，hexo s
+创建我的第一篇文章，hexo n &#39;我的第一篇文章&#39;
+清理缓存，hexo clean
+生成文章，hexo g</code></pre>
+<p>第四步（github）</p>
+<pre><code>创建github账号
+创建成功后，创建库名，文件名称必须与库名一致。.github.io
+装git插件，cnpm install --save hexo-deloyer-git
+设置_config.xml，配置deploy（1.type:git、2.repo:仓库全地址、3.branch：master）
+设置git账号和用户名（1.git config --global user.name &quot;cxxxb&quot;、2.git config --global user.email &quot;10@qq.com&quot;）
+推到远端服务器，hexo d </code></pre>
+<p>第五步（修改主题）</p>
+<pre><code>在hexo官网或者github上找到喜欢的主题，进行克隆，git clone+&#39;github地址/下载压缩包&#39;
+修改config.xml，找到themes文件，修改theme为新主题名称
+重新生成，hexo g
+推到本地看效果，hexo s
+推到github上，hexo d</code></pre>
+<p>此时hexo+github搭建博客已经搭建成功了!</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
       
   
   

@@ -22,20 +22,20 @@
     var CONFIG = {"hostname":"jasonmiao0226.github.io","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="今天传了github+hexo，用的不咋好，就这样把。aaa 周周是头猪儿。 aaaaaaaaa">
+  <meta name="description" content="搭建方案整体分为五步： 第一步（准备阶段） 整体搭建过程需要用到：Git、node.js、hexo、github 第二步（node安装） 通过官网地址下载：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F; 下载成功后，进行手动安装，安装成功后（此时npm管理器及node.js都已经安装完成了） 通过终端进行查看（mac版本如下）     1.sudo su 获取管理员权限     2.输入mac">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第二篇文章-周周is a pig">
-<meta property="og:url" content="http://jasonmiao0226.github.io/2020/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-%E5%91%A8%E5%91%A8is-a-pig/index.html">
+<meta property="og:title" content="第一篇：hexo+github搭建方案（无坑版）">
+<meta property="og:url" content="http://jasonmiao0226.github.io/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/index.html">
 <meta property="og:site_name" content="会飞的土豆">
-<meta property="og:description" content="今天传了github+hexo，用的不咋好，就这样把。aaa 周周是头猪儿。 aaaaaaaaa">
+<meta property="og:description" content="搭建方案整体分为五步： 第一步（准备阶段） 整体搭建过程需要用到：Git、node.js、hexo、github 第二步（node安装） 通过官网地址下载：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F; 下载成功后，进行手动安装，安装成功后（此时npm管理器及node.js都已经安装完成了） 通过终端进行查看（mac版本如下）     1.sudo su 获取管理员权限     2.输入mac">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-08-25T12:54:56.000Z">
-<meta property="article:modified_time" content="2020-08-26T00:47:57.149Z">
+<meta property="article:published_time" content="2020-08-26T04:12:36.000Z">
+<meta property="article:modified_time" content="2020-08-26T05:09:13.904Z">
 <meta property="article:author" content="Jason Miao">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://jasonmiao0226.github.io/2020/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-%E5%91%A8%E5%91%A8is-a-pig/">
+<link rel="canonical" href="http://jasonmiao0226.github.io/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/">
 
 
 <script class="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>我的第二篇文章-周周is a pig | 会飞的土豆</title>
+  <title>第一篇：hexo+github搭建方案（无坑版） | 会飞的土豆</title>
   
 
   <script>
@@ -207,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://jasonmiao0226.github.io/2020/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-%E5%91%A8%E5%91%A8is-a-pig/">
+    <link itemprop="mainEntityOfPage" href="http://jasonmiao0226.github.io/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/img.jpg">
@@ -223,7 +223,7 @@
     
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          我的第二篇文章-周周is a pig
+          第一篇：hexo+github搭建方案（无坑版）
         </h1>
 
         <div class="post-meta-container">
@@ -233,16 +233,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2020-08-25 20:54:56" itemprop="dateCreated datePublished" datetime="2020-08-25T20:54:56+08:00">2020-08-25</time>
+      <time title="Created: 2020-08-26 12:12:36 / Modified: 13:09:13" itemprop="dateCreated datePublished" datetime="2020-08-26T12:12:36+08:00">2020-08-26</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-08-26 08:47:57" itemprop="dateModified" datetime="2020-08-26T08:47:57+08:00">2020-08-26</time>
-      </span>
 
   
 </div>
@@ -254,8 +248,41 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>今天传了github+hexo，用的不咋好，就这样把。aaa</p>
-<p>周周是头猪儿。 <br>aaaaaaaaa</p>
+        <p>搭建方案整体分为五步：</p>
+<p>第一步（准备阶段）</p>
+<pre><code>整体搭建过程需要用到：Git、node.js、hexo、github</code></pre>
+<p>第二步（node安装）</p>
+<pre><code>通过官网地址下载：https://nodejs.org/zh-cn/
+下载成功后，进行手动安装，安装成功后（此时npm管理器及node.js都已经安装完成了）
+通过终端进行查看（mac版本如下）
+    1.sudo su 获取管理员权限
+    2.输入mac中的密码
+    3.验证通过后，node -v，查看node版本号
+    4.npm -v，查看nom版本号</code></pre>
+<p>第三步（cnpm）</p>
+<pre><code>安装npm，npm install -g
+安装成功后，安装博客框架，npm install -g hexo-cli 
+创建一个blog文件夹，mikdir blog
+进入blog，cd blog 
+初始化一个博客，sudo hexo init 
+启动这个博客，hexo s
+创建我的第一篇文章，hexo n &#39;我的第一篇文章&#39;
+清理缓存，hexo clean
+生成文章，hexo g</code></pre>
+<p>第四步（github）</p>
+<pre><code>创建github账号
+创建成功后，创建库名，文件名称必须与库名一致。.github.io
+装git插件，cnpm install --save hexo-deloyer-git
+设置_config.xml，配置deploy（1.type:git、2.repo:仓库全地址、3.branch：master）
+设置git账号和用户名（1.git config --global user.name &quot;cxxxb&quot;、2.git config --global user.email &quot;10@qq.com&quot;）
+推到远端服务器，hexo d </code></pre>
+<p>第五步（修改主题）</p>
+<pre><code>在hexo官网或者github上找到喜欢的主题，进行克隆，git clone+&#39;github地址/下载压缩包&#39;
+修改config.xml，找到themes文件，修改theme为新主题名称
+重新生成，hexo g
+推到本地看效果，hexo s
+推到github上，hexo d</code></pre>
+<p>此时hexo+github搭建博客已经搭建成功了!</p>
 
     </div>
 
@@ -269,14 +296,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" rel="prev" title="我的第一篇博客文章">
-                  <i class="fa fa-chevron-left"></i> 我的第一篇博客文章
+                <a href="/2020/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0-%E5%91%A8%E5%91%A8is-a-pig/" rel="prev" title="我的第二篇文章-周周is a pig">
+                  <i class="fa fa-chevron-left"></i> 我的第二篇文章-周周is a pig
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/08/26/%E7%AC%AC%E4%B8%80%E7%AF%87%EF%BC%9Ahexo-github%E6%90%AD%E5%BB%BA%E6%96%B9%E6%A1%88%EF%BC%88%E6%97%A0%E5%9D%91%E7%89%88%EF%BC%89/" rel="next" title="第一篇：hexo+github搭建方案（无坑版）">
-                  第一篇：hexo+github搭建方案（无坑版） <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
